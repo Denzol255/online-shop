@@ -1,0 +1,16 @@
+@use 'sass:list';
+@use 'sass:math';
+
+// Using Sass:math and sass:list for correct indication of division
+
+@import '_vendors.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'icons.scss';
+@import 'null.scss';
+@import 'settings.scss';
+@import '_modal.scss';
+@import '_loader.scss';
+
+// Header
+@import 'blocks/header.scss';
