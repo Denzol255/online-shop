@@ -1,0 +1,145 @@
+.page {
+  padding: 108px 0 56px;
+
+  // .page__main-slider
+
+  &__main-slider {
+  }
+}
+.main-slider {
+  // .main-slider__container
+
+  &__container {
+  }
+
+  // .main-slider__body
+
+  &__body {
+  }
+
+  // .main-slider__wrapper
+
+  &__wrapper {
+  }
+
+  // .main-slider__slide
+
+  &__slide {
+  }
+
+  // .main-slider__controls
+
+  &__controls {
+  }
+
+  // .main-slider__button
+
+  &__button {
+    // .main-slider__button_prev
+
+    &_prev {
+    }
+
+    // .main-slider__button_next
+
+    &_next {
+    }
+  }
+}
+
+.slide-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 83px 21px 56px;
+  background-color: rgba(242, 242, 242, 0.4);
+  // .slide-main__description
+
+  &__description {
+    display: flex;
+    flex: 0 1 444px;
+    flex-direction: column;
+    & > * {
+      &:not(:last-child) {
+        margin: 0 0 16px;
+      }
+    }
+  }
+
+  // .slide-main__label
+
+  &__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: math.div(16px, 14px) * 100%;
+    color: #ff9900;
+  }
+
+  // .slide-main__title
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: math.div(58px, 48px) * 100%;
+    color: #000;
+  }
+
+  // .slide-main__text
+
+  &__text {
+    font-size: 12px;
+    line-height: math.div(20px, 12px) * 100%;
+    color: rgba(35, 47, 62, 0.48);
+  }
+
+  // .slide-main__buttons
+
+  &__buttons {
+    display: flex;
+  }
+
+  // .slide-main__button
+
+  &__button {
+    flex: 0 1 125px;
+    &:not(:last-child) {
+      margin: 0 12px 0 0;
+    }
+  }
+
+  // .slide-main__image
+
+  &__image {
+    position: relative;
+    flex: 0 1 417px;
+    mix-blend-mode: multiply;
+
+    img {
+      max-width: 100%;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      width: 26.38%;
+      height: 26.38%;
+      mix-blend-mode: multiply;
+    }
+
+    &::before {
+      left: 6.24%;
+      top: 11.27%;
+      background-color: #146eb4;
+      mix-blend-mode: multiply;
+    }
+
+    &::after {
+      right: 2.64%;
+      bottom: 2.4%;
+      background-color: #f90;
+      mix-blend-mode: multiply;
+    }
+  }
+}

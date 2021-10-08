@@ -37,15 +37,15 @@
     top: 0;
     z-index: 50;
     width: 100%;
-    transition: background-color 0.3s ease 0s;
     background-color: #fff;
+    transition: background-color 0.3s ease 0s;
   }
 
   // .header__burger
 
   &__burger {
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,6 +437,7 @@
   &__login {
     display: flex;
     flex: 0 0 94px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 38px;
@@ -464,7 +465,7 @@
   padding: 130px 30px 30px;
   width: 100%;
   height: 100%;
-  background-color: green;
+  background-color: #fff;
   transform: translate(-100%, 0);
   transition: transform 0.3s ease 0s;
 
@@ -476,12 +477,15 @@
     padding: 100px 30px 30px;
   }
 
-  @media (max-width: $md2) {
+  @media (max-width: $md3) {
     padding: 70px 20px 20px;
   }
   // .menu__body
 
   &__body {
+    &:not(:last-child) {
+      margin: 0 0 40px;
+    }
   }
 
   // .menu__list
@@ -494,8 +498,12 @@
   // .menu__item
 
   &__item {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 24px;
+    line-height: math.div(30px, 24px) * 100%;
+    color: #232f3e;
 
     &:not(:last-child) {
       margin: 0 0 20px;
@@ -505,5 +513,33 @@
   // .menu__link
 
   &__link {
+    color: inherit;
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // .menu__login
+
+  &__login {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 30%;
+    min-height: 38px;
+    font-size: 12px;
+    line-height: math.div(14px, 12px) * 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #232f3e;
+
+    @media (min-width: $md4) {
+      display: none;
+    }
   }
 }

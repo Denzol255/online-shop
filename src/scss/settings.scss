@@ -50,41 +50,36 @@ body {
   }
 }
 
-._blue-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 15px;
-  min-height: 32px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: math.div(14px, 12px) * 100%;
-  text-align: center;
-  color: #fff;
-  background-color: #146eb4;
-  transition: all 0.3s ease 0s;
-
-  @media (any-hover: hover) {
-    &:hover {
-      background-color: #0c07a8;
-    }
-  }
-}
-
+._blue-btn,
 ._border-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #146eb4;
-  padding: 0 15px;
+  padding: 0 5px;
   min-height: 32px;
   font-weight: 500;
   font-size: 12px;
   line-height: math.div(14px, 12px) * 100%;
   text-align: center;
+}
+
+._blue-btn {
+  color: #fff;
+  background-color: #146eb4;
+  transition: all 0.5s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #06538f;
+    }
+  }
+}
+
+._border-btn {
   color: #146eb4;
   background-color: #fff;
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
 
   @media (any-hover: hover) {
     &:hover {
