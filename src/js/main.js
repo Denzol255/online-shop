@@ -17,39 +17,22 @@ AOS.init();
 // Swiper slider
 Swiper.use([Navigation]);
 
-if (document.querySelector('.slider-news__body')) {
-  new Swiper('.slider-news__body', {
+if (document.querySelector('.main-slider__body')) {
+  new Swiper('.main-slider__body', {
     // Optional parameters
     observer: true,
     observeParents: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 34,
     watchOverflow: true,
     speed: 800,
-    // loop: true,
-    // loopAdditionalSlides: 5,
+    loop: true,
     preloadImages: false,
-    parallax: true,
 
     // Navigation arrows
     navigation: {
-      nextEl: '.slider-news .slider-news__arrow_next',
-      prevEl: '.slider-news .slider-news__arrow_prev',
-    },
-
-    breakpoints: {
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 34,
-      },
-      730: {
-        slidesPerView: 2,
-        spaceBetween: 34,
-      },
-      320: {
-        slidesPerView: 1.1,
-        spaceBetween: 30,
-      },
+      nextEl: '.main-slider .main-slider__button_next',
+      prevEl: '.main-slider .main-slider__button_prev',
     },
   });
 }
