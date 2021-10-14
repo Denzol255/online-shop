@@ -22,8 +22,9 @@ if (document.querySelector('.main-slider__body')) {
     // Optional parameters
     observer: true,
     observeParents: true,
-    slidesPerView: 1,
-    spaceBetween: 34,
+    slidesPerView: 1.1,
+    spaceBetween: 22,
+    grabCursor: true,
     watchOverflow: true,
     speed: 800,
     loop: true,
@@ -33,6 +34,13 @@ if (document.querySelector('.main-slider__body')) {
     navigation: {
       nextEl: '.main-slider .main-slider__button_next',
       prevEl: '.main-slider .main-slider__button_prev',
+    },
+
+    breakpoints: {
+      992: {
+        slidesPerView: 1,
+        spaceBetween: 34,
+      },
     },
   });
 }

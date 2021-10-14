@@ -104,6 +104,33 @@ input[placeholder] {
   height: auto;
 }
 
+.top-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.top-block__title {
+  font-size: 24px;
+  line-height: math.div(28px, 24px) * 100%;
+  color: #000;
+}
+
+.top-block__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: math.div(19px, 16px) * 100%;
+  color: #146eb4;
+  transition: all 0.3s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+      color: #06538f;
+    }
+  }
+}
+
 // .to {
 //   &-top {
 //     position: fixed;

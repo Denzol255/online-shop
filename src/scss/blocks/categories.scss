@@ -1,0 +1,134 @@
+.page {
+  // .page__categories
+
+  &__categories {
+  }
+}
+.categories {
+  padding: 0 0 82px;
+
+  // .categories__container
+
+  &__container {
+  }
+
+  // .categories__top
+
+  &__top {
+    margin-bottom: 40px;
+  }
+
+  // .categories__title
+
+  &__title {
+  }
+
+  // .categories__more
+
+  &__more {
+  }
+
+  // .categories__cards
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -10px -15px;
+    min-height: 184px;
+
+    @media (max-width: $md2) {
+      margin: 0 -10px -10px;
+    }
+  }
+
+  // .categories__card
+
+  &__card {
+    margin: 0 0 15px;
+
+    @media (max-width: $md2) {
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.card-categories {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 0 1 10%;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+
+  width: 99px;
+  height: 184px;
+
+  @media (max-width: $md2) {
+    flex: 0 1 20%;
+  }
+
+  @media (max-width: $md4) {
+    flex: 0 1 50%;
+  }
+
+  // .card-categories__main
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease 0s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 14px;
+      z-index: -1;
+      width: 80px;
+      height: 100%;
+      transition: all 0.3s ease 0s;
+    }
+
+    & > * {
+      &:not(:last-child) {
+        margin: 0 0 2px;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        height: 184px;
+
+        &::before {
+          background-color: rgba(35, 47, 62, 0.16);
+          filter: blur(52px);
+        }
+      }
+    }
+  }
+
+  // .card-categories__image
+
+  &__image {
+    img {
+      vertical-align: baseline;
+    }
+  }
+
+  // .card-categories__name
+
+  &__name {
+    font-size: 13px;
+    line-height: math.div(15px, 13px) * 100%;
+    text-align: center;
+    color: #232f3e;
+  }
+}
