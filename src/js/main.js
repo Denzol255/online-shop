@@ -57,5 +57,5 @@ sendForm();
 // Spollers
 spollers();
 
-// Header scroll and changing header height
+// Header scroll effect and changing header height
 changeHeader();

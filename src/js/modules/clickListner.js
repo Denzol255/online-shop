@@ -13,6 +13,7 @@ const clickListner = () => {
         document
           .querySelector('.header__menu.menu')
           .classList.toggle('_active');
+        document.body.classList.toggle('_lock');
       }
       if (
         target.matches('.search-header__icon') ||

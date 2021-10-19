@@ -93,10 +93,6 @@ input[placeholder] {
   text-overflow: ellipsis;
   opacity: 1;
   transition: opacity 0.3s ease;
-
-  &:focus-visible {
-    opacity: 0;
-  }
 }
 
 // Fixing height of slides in swiper
