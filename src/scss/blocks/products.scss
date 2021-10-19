@@ -6,11 +6,7 @@
 }
 
 .products {
-  padding: 0 0 78px;
-
-  @media (max-width: $md2) {
-    padding: 0 0 20px;
-  }
+  padding: 42px 0 80px;
 
   // .products__container
 
@@ -38,21 +34,16 @@
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px -30px;
-
-    @media (max-width: 600px) {
-      margin: 0 0 -15px;
-    }
+    margin: 0 -10px -10px;
   }
 
   // .products__card
 
   &__card {
-    margin: 0 0 30px;
+    margin: 0 0 10px;
     padding: 0 10px;
 
     @media (max-width: 600px) {
-      margin: 0 0 15px;
       padding: 0;
     }
   }
@@ -62,6 +53,7 @@
   position: relative;
   z-index: 2;
   flex: 0 1 25%;
+  min-height: 410px;
 
   @media (max-width: $md2) {
     flex: 0 1 50%;
@@ -76,7 +68,7 @@
   &__main {
     display: flex;
     flex-direction: column;
-    padding: 38px 16px 24px;
+    padding: 38px 16px 6px;
     min-height: 360px;
     background-color: rgba(242, 242, 242, 0.4);
     transition: all 0.3s ease 0s;
@@ -161,6 +153,7 @@
     font-weight: 700;
     font-size: 15px;
     line-height: math.div(16px, 15px) * 100%;
+
     &:not(:last-child) {
       margin: 0 0 8px;
     }

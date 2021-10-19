@@ -4,8 +4,13 @@
   &__categories {
   }
 }
+
 .categories {
-  padding: 0 0 82px;
+  padding: 56px 0 40px;
+
+  @media (max-width: $md2) {
+    padding: 40px 0 0;
+  }
 
   // .categories__container
 
