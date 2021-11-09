@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": 11,
+      "url": "#",
+      "title": "Baby",
+      "image": "baby..svg"
+    },
+    {
+      "id": 12,
+      "url": "#",
+      "title": "Women’s Fashion",
+      "image": "woman..svg"
+    },
+    {
+      "id": 13,
+      "url": "#",
+      "title": "Health & Household",
+      "image": "heartbeat..svg"
+    },
+    {
+      "id": 14,
+      "url": "#",
+      "title": "Pet Supplies",
+      "image": "pets..svg"
+    }
+  ]
+}
