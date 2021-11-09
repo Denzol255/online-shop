@@ -1,71 +1,44 @@
 {
-	"products": [
-		{
-			"id": 5,
-			"url": "#",
-			"title": "Grifo",
-			"text": "Night lamp",
-			"labels": "",
-			"image": "05.jpg",
-			"price": "1.500.000",
-			"priceOld": "",
-			"shareUrl": "",
-			"likeUrl": ""
-		},
-		{
-			"id": 6,
-			"url": "#",
-			"title": "Muggo",
-			"text": "Small mug",
-			"labels": [
-				{
-					"type": "sale",
-					"value": "-50%"
-				},
-				{
-					"type": "new",
-					"value": "New"
-				}
-			],
-			"image": "06.jpg",
-			"price": "1.500.000",
-			"priceOld": "2.500.000",
-			"shareUrl": "",
-			"likeUrl": ""
-		},
-		{
-			"id": 7,
-			"url": "#",
-			"title": "Pingky",
-			"text": "Cute bed set",
-			"labels": [
-				{
-					"type": "sale",
-					"value": "-50%"
-				}
-			],
-			"image": "07.jpg",
-			"price": "7.000.000",
-			"priceOld": "14.500.000",
-			"shareUrl": "",
-			"likeUrl": ""
-		},
-		{
-			"id": 8,
-			"url": "#",
-			"title": "Potty",
-			"text": "Minimalist flower pot",
-			"labels": [
-				{
-					"type": "new",
-					"value": "New"
-				}
-			],
-			"image": "08.jpg",
-			"price": "500.000",
-			"priceOld": "",
-			"shareUrl": "",
-			"likeUrl": ""
-		}
-	]
+  "products": [
+    {
+      "id": 5,
+      "url": "#",
+      "title": "X-Tralight 2.0 Softside Spinner",
+      "label": "Men Fashion",
+      "imageWebp": "suitcase.webp",
+      "imagePng": "suitcase.png",
+      "price": "1,990.00",
+      "rating": "4.5"
+    },
+    {
+      "id": 6,
+      "url": "#",
+      "title": "Apple Airpods Pro",
+      "label": "Mobiles Accessories",
+      "imageWebp": "airpods.webp",
+      "imagePng": "airpods.png",
+      "price": "3,990.00",
+      "rating": "5"
+    },
+    {
+      "id": 7,
+      "url": "#",
+      "title": "Samsung A51",
+      "label": "Mobiles",
+      "imageWebp": "phone.webp",
+      "imagePng": "phone.png",
+      "price": "2,640.00",
+      "rating": "4.5"
+    },
+    {
+      "id": 8,
+      "url": "#",
+      "title": "Android Watch 5 2021",
+      "label": "Men Fashion",
+      "imageWebp": "watch.webp",
+      "imagePng": "watch.png",
+      "price": "1,245.00",
+      "rating": "4.5"
+    }
+  ]
 }

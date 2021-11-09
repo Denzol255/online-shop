@@ -27,6 +27,11 @@
   // .products__more
 
   &__more {
+    &._disabled {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 
   // .products__cards

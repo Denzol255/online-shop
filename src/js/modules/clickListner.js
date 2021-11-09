@@ -1,4 +1,6 @@
 import { isMobile, _removeClasses } from './functions';
+import showMoreCategories from './showMoreCategories';
+import showMoreProducts from './showMoreProducts';
 
 const clickListner = () => {
   document.addEventListener('DOMContentLoaded', function () {
@@ -34,6 +36,20 @@ const clickListner = () => {
             '_hover'
           );
         }
+      }
+      if (
+        target.matches('.products__more') ||
+        target.closest('.products__more')
+      ) {
+        showMoreProducts();
+        target.classList.add('_disabled');
+      }
+      if (
+        target.matches('.categories__more') ||
+        target.closest('.categories__more')
+      ) {
+        showMoreCategories();
+        target.classList.add('_disabled');
       }
     });
   });
